@@ -1,6 +1,7 @@
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { updateCarousel } from "../actions/carouselActions.js";
+import { updateCarousel } from "../actions/carouselActions";
+import { properties } from "../properties/pageProperties";
 
 const ContentCarousel = () => {
   const dispatch = useDispatch();
@@ -17,11 +18,11 @@ const ContentCarousel = () => {
     dispatch(updateCarousel(index - 1));
   }
 
-  const activeContent = ["Test 1", "Test 2", "Test 3"]
+  const activeContent = [<p>{properties.pageOne}</p>, <p>{properties.pageTwo}</p>, <p>{properties.pageThree}</p>, <p>{properties.pageFour}</p>]
 
   return (
   <div className="Content-Carousel">
-    <p>{activeContent[carousel]}</p>
+    {activeContent[carousel]}
     <button onClick={() => decrementIndex(carousel)}>Previous</button>
     <button onClick={() => incrementIndex(carousel)}>Next</button>
   </div>
