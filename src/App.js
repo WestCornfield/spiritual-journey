@@ -1,6 +1,6 @@
-import React from 'react';
-import ContentCarousel from './components/ContentCarousel';
-import './App.css';
+import React from "react";
+import ContentCarousel from "./components/ContentCarousel.component";
+import "./App.css";
 
 const App = () => {
   return (

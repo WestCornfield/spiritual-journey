@@ -19,7 +19,7 @@ const carouselReducer = (state = initialState, action) => {
     default:
       return state
   }
-}
+};
 
 export function setCarousel(carouselValue) {
   return {
