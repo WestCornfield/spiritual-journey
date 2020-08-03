@@ -1,7 +1,7 @@
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { updateCarousel } from "../actions/carouselActions";
-import { properties } from "../properties/pageProperties";
+import { pageProperties } from "../properties/pageProperties";
 
 const ContentCarousel = () => {
   const dispatch = useDispatch();
@@ -18,7 +18,7 @@ const ContentCarousel = () => {
     dispatch(updateCarousel(index - 1));
   }
 
-  const activeContent = [<p>{properties.pageOne}</p>, <p>{properties.pageTwo}</p>, <p>{properties.pageThree}</p>, <p>{properties.pageFour}</p>]
+  const activeContent = [<p>{pageProperties.pageOne}</p>, <p>{pageProperties.pageTwo}</p>, <p>{pageProperties.pageThree}</p>, <p>{pageProperties.pageFour}</p>]
 
   return (
   <div className="Content-Carousel">
