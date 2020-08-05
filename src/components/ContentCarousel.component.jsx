@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { updateCarousel } from "../actions/carouselActions";
 import { pageProperties } from "../properties/pageProperties";
 import Quiz from "./Quiz.component";
+import FinishPage from "./FinishPage.component";
 
 const ContentCarousel = () => {
   const dispatch = useDispatch();
@@ -19,7 +20,7 @@ const ContentCarousel = () => {
     dispatch(updateCarousel(index - 1));
   }
 
-  const activeContent = [<p>{pageProperties.pageOne}</p>, <p>{pageProperties.pageTwo}</p>, <p>{pageProperties.pageThree}</p>, <p>{pageProperties.pageFour}</p>, <Quiz />]
+  const activeContent = [<p>{pageProperties.pageOne}</p>, <p>{pageProperties.pageTwo}</p>, <p>{pageProperties.pageThree}</p>, <p>{pageProperties.pageFour}</p>, <Quiz />, <FinishPage />]
 
   return (
   <div className="Content-Carousel">
