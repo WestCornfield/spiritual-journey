@@ -27,7 +27,7 @@ const Question = (props) => {
   return (
   <div className="quiz-question">
     <label htmlFor={`question${props.index}`}>{questions[props.index]}</label>
-    <input type="range" min="1" max="5"
+    <input type="range" min="1" max="5" defaultValue="1"
       id={`question${props.index}`}
       onChange={(event) => valueChanged(event.target.value)} />
   </div>

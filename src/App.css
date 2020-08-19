@@ -36,3 +36,11 @@
     transform: rotate(360deg);
   }
 }
+
+body {
+  background-image: url("./resources/sunset.jpg");
+}
+
+main {
+  background: white;
+}

@@ -5,11 +5,11 @@ const SET_SCORE_FOUR = "SET_SCORE_FOUR";
 const SET_SCORE_FIVE = "SET_SCORE_FIVE";
 
 export const initialState = {
-  questionOne: 0,
-  questionTwo: 0,
-  questionThree: 0,
-  questionFour: 0,
-  questionFive: 0
+  questionOne: 1,
+  questionTwo: 1,
+  questionThree: 1,
+  questionFour: 1,
+  questionFive: 1
 };
 
 const quizReducer = (state = initialState, action) => {
