@@ -6,6 +6,7 @@ const App = () => {
   return (
     <div className="App">
       <main className="App-main">
+        <h1>Mapping Your Spiritual Journey</h1>
         <ContentCarousel />
       </main>
     </div>

@@ -37,10 +37,36 @@
   }
 }
 
-body {
-  background-image: url("./resources/sunset.jpg");
+h1 {
+  color:white;
 }
 
-main {
-  background: white;
+body {
+  background-image: url("./resources/sunset.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+p {
+  background: blue;
+  opacity: 0.8;
+    color:white;
+}
+
+.questions-list {
+  background: blue;
+  opacity: 0.8;
+  color:white;
+}
+
+.finish-score {
+  background: blue;
+  opacity: 0.8;
+  color:white;
+}
+
+.finish-recommendation {
+  background: blue;
+  opacity: 0.8;
+  color:white;
 }

@@ -12,21 +12,34 @@ const ContentCarousel = () => {
 
   const incrementIndex = (index) => {
     console.log(carousel);
-    dispatch(updateCarousel(index + 1));
+
+    if (carousel == activeContent.length - 1) {
+      dispatch(updateCarousel(0));
+    } else {
+      dispatch(updateCarousel(index + 1));
+    }
   }
 
   const decrementIndex = (index) => {
     console.log(carousel);
+
     dispatch(updateCarousel(index - 1));
   }
 
   const activeContent = [<p>{pageProperties.pageOne}</p>, <p>{pageProperties.pageTwo}</p>, <p>{pageProperties.pageThree}</p>, <p>{pageProperties.pageFour}</p>, <Quiz />, <FinishPage />]
 
+  const rightButtonText = () => {
+    if (carousel == activeContent.length - 1) {
+      return "Home";
+    }
+    return "Next";
+  }
+
   return (
-  <div className="Content-Carousel">
+  <div className="content-carousel">
     {activeContent[carousel]}
-    <button onClick={() => decrementIndex(carousel)}>Previous</button>
-    <button onClick={() => incrementIndex(carousel)}>Next</button>
+    <button disabled={carousel == 0} onClick={() => decrementIndex(carousel)}>Previous</button>
+    <button onClick={() => incrementIndex(carousel)}>{rightButtonText()}</button>
   </div>
 );
 }
