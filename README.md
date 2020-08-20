@@ -1,3 +1,14 @@
+For Demo Use:
+
+1. Open terminal on Mac.
+2. Command in Terminal 'cd Documents'
+3. Command in Terminal 'git clone https://github.com/WestCornfield/spiritual-journey.git'
+4. Command in Terminal 'cd spiritual-journey'
+5. Command in Terminal 'yarn start'
+
+You now have an instance running of the 'Mapping Your Spiritual Journey' demo on your computer.
+
+-----------------------------------------
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
