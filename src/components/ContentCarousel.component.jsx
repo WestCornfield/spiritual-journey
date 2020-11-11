@@ -4,6 +4,7 @@ import { updateCarousel } from "../actions/carouselActions";
 import { pageProperties } from "../properties/pageProperties";
 import Quiz from "./Quiz.component";
 import FinishPage from "./FinishPage.component";
+import styles from "./content-carousel-styles.css";
 
 const ContentCarousel = () => {
   const dispatch = useDispatch();
@@ -11,8 +12,6 @@ const ContentCarousel = () => {
   const carousel = useSelector((state) => state.carousel.index);
 
   const incrementIndex = (index) => {
-    console.log(carousel);
-
     if (carousel == activeContent.length - 1) {
       dispatch(updateCarousel(0));
     } else {
@@ -21,12 +20,10 @@ const ContentCarousel = () => {
   }
 
   const decrementIndex = (index) => {
-    console.log(carousel);
-
     dispatch(updateCarousel(index - 1));
   }
 
-  const activeContent = [<p>{pageProperties.pageOne}</p>, <p>{pageProperties.pageTwo}</p>, <p>{pageProperties.pageThree}</p>, <p>{pageProperties.pageFour}</p>, <Quiz />, <FinishPage />]
+  const activeContent = [<h2 className="slow-fade-in">Press Any Button To Begin...</h2>,<div>{pageProperties.pageOne}</div>, <div>{pageProperties.pageTwo}</div>, <div>{pageProperties.pageThree}</div>, <div>{pageProperties.pageFour}</div>,<div>{pageProperties.pageFive}</div>,<div>{pageProperties.pageSix}</div>, <Quiz />, <FinishPage />]
 
   const rightButtonText = () => {
     if (carousel == activeContent.length - 1) {

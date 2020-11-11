@@ -5,5 +5,6 @@ export const quizProperties = {
     "God calls me to be involved in the lives of the poor and the suffering",
     "Worship has an audience of one - God.",
     "I seek to follow Jesus every day so my life looks more like his.",
-    "I believe we are created in the image of God and therefore have equal value, regardless of race, religion or gender"]
+    "I believe we are created in the image of God and therefore have equal value, regardless of race, religion or gender",
+    ""]
 };

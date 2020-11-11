@@ -1,12 +1,12 @@
 import React from "react";
 import "./App.css";
-import BackgroundVideo from "./components/BackgroundVideo.component";
+import TemporaryBackground from "./components/TemporaryBackground.component";
 
 const App = () => {
   return (
     <div className="App">
       <main className="App-main">
-        <BackgroundVideo />
+        <TemporaryBackground />
       </main>
     </div>
   );
