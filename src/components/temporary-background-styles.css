@@ -1,5 +1,5 @@
 .background {
-  background-color: black;
+  background: url("../resources/Pathway.jpg") black;
   position: fixed;
   height: 100%;
   width:100%

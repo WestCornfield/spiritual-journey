@@ -9,7 +9,6 @@ const Question = (props) => {
   const questions = quizProperties.questions;
 
   const valueChanged = (valueString) => {
-    console.log("inside valueChanged");
     var value = parseInt(valueString);
     if (props.index == 0) {
       dispatch(updateScoreOne(value));

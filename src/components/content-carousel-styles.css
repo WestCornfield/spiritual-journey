@@ -1,36 +1,42 @@
+.content-carousel {
+  background:white;
+  width:80%;
+  margin:auto;
+}
+
 .slow-fade-in {
   animation: fadeInFromNone 5s ease-out;
-  color:white;
+  color:black;
 }
 
 .carousel-page-one {
   animation: fadeInFromNone 5s ease-out;
-  color:white;
+  color:black;
 }
 
 .carousel-page-two {
   animation: fadeInFromNone 5s ease-out;
-  color:white;
+  color:black;
 }
 
 .carousel-page-three {
   animation: fadeInFromNone 5s ease-out;
-  color:white;
+  color:black;
 }
 
 .carousel-page-four {
   animation: fadeInFromNone 5s ease-out;
-  color:white;
+  color:black;
 }
 
 .carousel-page-five {
   animation: fadeInFromNone 5s ease-out;
-  color:white;
+  color:black;
 }
 
 .carousel-page-six {
   animation: fadeInFromNone 5s ease-out;
-  color:white;
+  color:black;
 }
 
 @keyframes fadeInFromNone {
@@ -51,5 +57,5 @@
 }
 
 .carousel {
-  color: white;
+  color: black;
 }
