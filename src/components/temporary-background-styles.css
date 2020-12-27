@@ -4,3 +4,15 @@
   height: 100%;
   width:100%
 }
+
+@media only screen and (max-width: 800px) {
+  .background {
+    background: url("../resources/Pathway-iphone.jpg") black;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .background {
+    background: url("../resources/Pathway-iPhoneX.jpg") black;
+  }
+}
