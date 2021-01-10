@@ -4,7 +4,7 @@ import QuestionList from "./QuestionList.component";
 const Quiz = () => {
   return (
   <div className="quiz-questions">
-    <QuestionList />
+    <QuestionList startIndex={0} endIndex={4} />
   </div>
 );
 }

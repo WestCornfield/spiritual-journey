@@ -2,14 +2,14 @@ import React from "react";
 import { useSelector } from "react-redux";
 
 const FinishPage = () => {
-  const questionOne = useSelector((state) => state.quiz.questionOne);
-  const questionTwo = useSelector((state) => state.quiz.questionTwo);
-  const questionThree = useSelector((state) => state.quiz.questionThree);
-  const questionFour = useSelector((state) => state.quiz.questionFour);
-  const questionFive = useSelector((state) => state.quiz.questionFive);
+  const questions = useSelector((state) => state.quiz.question);
 
   const sumOfAllScores = () => {
-    return questionOne + questionTwo + questionThree + questionFour + questionFive
+    var sum = 0;
+    for (var i = 0; i < questions.length; i++) {
+      sum += questions[i];
+    }
+    return sum;
   }
 
   const Ending = () => {

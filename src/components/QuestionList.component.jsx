@@ -1,15 +1,17 @@
 import React from "react";
 import Question from "./Question.component";
 
-const QuestionList = () => {
+const QuestionList = ({startIndex, endIndex}) => {
+
+  var questions = [];
+
+  for (var i = startIndex; i <= endIndex; i++) {
+    questions.push(<Question key={i} index={i} />);
+  }
 
   return (
   <div className="questions-list">
-    <Question index="0" />
-    <Question index="1" />
-    <Question index="2" />
-    <Question index="3" />
-    <Question index="4" />
+    {questions}
   </div>
 );
 }

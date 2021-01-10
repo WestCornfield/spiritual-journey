@@ -1,37 +1,9 @@
 import {
-setScoreOne,
-setScoreTwo,
-setScoreThree,
-setScoreFour,
-setScoreFive
+  setScore,
 } from "../reducers/quizReducer";
 
-export function updateScoreOne(value) {
+export function updateScore(value, index) {
   return (dispatch) => {
-      return dispatch(setScoreOne(value));
-  }
-}
-
-export function updateScoreTwo(value) {
-  return (dispatch) => {
-      return dispatch(setScoreTwo(value));
-  }
-}
-
-export function updateScoreThree(value) {
-  return (dispatch) => {
-      return dispatch(setScoreThree(value));
- }
-}
-
-export function updateScoreFour(value) {
-  return (dispatch) => {
-      return dispatch(setScoreFour(value));
-  }
-}
-
-export function updateScoreFive(value) {
-  return (dispatch) => {
-      return dispatch(setScoreFive(value));
+      return dispatch(setScore(value, index));
   }
 }
