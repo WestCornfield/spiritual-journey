@@ -2,6 +2,33 @@
   background:white;
   width:80%;
   margin:auto;
+  overflow-y:scroll;
+}
+
+@media only screen and (max-width: 800px) {
+  .content-carousel {
+    width: 100%;
+    font-size:14px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .content-carousel {
+    width: 100%;
+    font-size:11px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .content-carousel {
+    width: 100%;
+    font-size:9px;
+  }
+}
+
+
+.content-carousel-buttons {
+  height:30px;
 }
 
 .slow-fade-in {

@@ -1,5 +1,6 @@
 import React from "react";
 import Question from "./Question.component";
+import "./question-list-styles.css"
 
 const QuestionList = ({startIndex, endIndex}) => {
 

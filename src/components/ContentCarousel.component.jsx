@@ -4,7 +4,7 @@ import { updateCarousel, updateShowModal } from "../actions/carouselActions";
 import { pageProperties } from "../properties/pageProperties";
 import QuestionList from "./QuestionList.component";
 import FinishPage from "./FinishPage.component";
-import styles from "./content-carousel-styles.css";
+import "./content-carousel-styles.css";
 
 const ContentCarousel = () => {
   const dispatch = useDispatch();
@@ -52,8 +52,10 @@ const ContentCarousel = () => {
   return (
   <div className="content-carousel">
     {activeContent[carousel]}
-    <button disabled={carousel == 0} onClick={() => decrementIndex(carousel)}>Previous</button>
-    <button onClick={() => incrementIndex(carousel)}>{rightButtonText()}</button>
+    <div className="content-carousel-buttons">
+      <button disabled={carousel == 0} onClick={() => decrementIndex(carousel)}>Previous</button>
+      <button onClick={() => incrementIndex(carousel)}>{rightButtonText()}</button>
+    </div>
   </div>
 );
 }
