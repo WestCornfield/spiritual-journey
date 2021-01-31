@@ -1,4 +1,10 @@
-import { setCarousel, setText } from "../reducers/carouselReducer";
+import { setCarousel, setText, setShowModal } from "../reducers/carouselReducer";
+
+export function updateShowModal(showTutorial) {
+  return (dispatch) => {
+    return dispatch(setShowModal(showTutorial));
+  }
+}
 
 export function updateCarousel(carouselValue) {
   return (dispatch) => {

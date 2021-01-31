@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import styles from "./temporary-background-styles.css";
 
 import ApplicationContainer from './ApplicationContainer.component';
