@@ -3,6 +3,9 @@ import Modal from 'react-bootstrap/Modal'
 import { useDispatch } from "react-redux";
 import { updateShowModal } from '../actions/carouselActions';
 
+import tutorialVideo from '../resources/videos/Spiritual_Journey_Tutorial_Video.mp4';
+
+
 const TutorialModal = ({show, title}) => {
   const dispatch = useDispatch();
 
@@ -16,9 +19,9 @@ const TutorialModal = ({show, title}) => {
         <Modal.Title>{title}</Modal.Title>
       </Modal.Header>
       <Modal.Body>
-        <div className="embed-responsive embed-responsive-16by9">
-          <iframe className="embed-responsive-item" src="https://www.youtube.com/embed/vlDzYIIOYmM" ></iframe>
-        </div>
+        <video width="320" height="240" controls>
+          <source src={tutorialVideo} type="video/mp4"></source>
+        </video>
       </Modal.Body>
    </Modal>);
 }
