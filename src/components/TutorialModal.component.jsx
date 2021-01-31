@@ -19,9 +19,7 @@ const TutorialModal = ({show, title}) => {
         <Modal.Title>{title}</Modal.Title>
       </Modal.Header>
       <Modal.Body>
-        <video width="320" height="240" controls>
-          <source src={tutorialVideo} type="video/mp4"></source>
-        </video>
+        <iframe width="360" height="315" src="https://www.youtube.com/embed/SNzwRndQzjY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </Modal.Body>
    </Modal>);
 }
