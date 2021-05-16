@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { quizProperties } from "../properties/quizProperties";
 import { updateScore } from "../actions/quizActions";
+import "./question-styles.css"
 
 const Question = (props) => {
   const dispatch = useDispatch();
@@ -19,11 +20,13 @@ const Question = (props) => {
 
   return (
   <div className="quiz-question">
-    <label htmlFor={`question${props.index}`}>{questions[props.index]}</label>
-    <input type="range" min="1" max="5" defaultValue={`${questionScores[props.index]}`}
-      id={`question${props.index}`}
-      onChange={(event) => valueChanged(event.target.value)} />
-    <span>{questionScore}</span>
+    <span className={ questions[props.index].length > 150 ? "long-question" : "question"} >
+      <label htmlFor={`question${props.index}`}>{questions[props.index]}</label>
+      <input type="range" min="1" max="5" defaultValue={`${questionScores[props.index]}`}
+        id={`question${props.index}`}
+        onChange={(event) => valueChanged(event.target.value)} />
+      <span className="question-score">{questionScore}</span>
+    </span>
   </div>
 );
 }
