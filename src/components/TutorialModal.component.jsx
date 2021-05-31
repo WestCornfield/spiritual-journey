@@ -3,9 +3,6 @@ import Modal from 'react-bootstrap/Modal'
 import { useDispatch } from "react-redux";
 import { updateShowModal } from '../actions/carouselActions';
 
-import tutorialVideo from '../resources/videos/Spiritual_Journey_Tutorial_Video.mp4';
-
-
 const TutorialModal = ({show, title}) => {
   const dispatch = useDispatch();
 
@@ -19,7 +16,7 @@ const TutorialModal = ({show, title}) => {
         <Modal.Title>{title}</Modal.Title>
       </Modal.Header>
       <Modal.Body>
-        <iframe width="100%" height="315" src="https://www.youtube.com/embed/SNzwRndQzjY" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+        <iframe title="tutorial video" width="100%" height="315" src="https://www.youtube.com/embed/SNzwRndQzjY" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
       </Modal.Body>
    </Modal>);
 }

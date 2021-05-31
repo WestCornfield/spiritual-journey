@@ -1,19 +1,33 @@
 import React from "react";
 import { useSelector } from "react-redux";
+import EndSection from "./EndSection.component";
 
 const FinishPage = () => {
   const questions = useSelector((state) => state.quiz.question);
 
   const sumOfAllScores = () => {
-    var sum = 0;
+    var sum = [0, 0, 0];
     for (var i = 0; i < questions.length; i++) {
-      sum += questions[i];
+      if (i % 3 == 0) {
+        sum[0] += questions[i];
+      } else if (i % 3 == 1) {
+        sum[1] += questions[i];
+      } else if (i % 3 == 2) {
+        sum[2] += questions[i];
+      }
+      //sum += questions[i];
     }
     return sum;
   }
 
   const Ending = () => {
     const sum = sumOfAllScores()
+    return (<>
+      <EndSection type="Walk" score={sum[0]} />
+      <EndSection type="Whistle" score={sum[1]} />
+      <EndSection type="Win" score={sum[2]} />
+    </>);
+
     if (sum >= 192) {
       return (<>
                <div className="finish-score">You are Diving In.</div>
