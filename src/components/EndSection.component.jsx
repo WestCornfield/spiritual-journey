@@ -16,9 +16,11 @@ const EndSection = (props) => {
   }
 
   return (<>
-           <div className="finish-title">{props.type}</div>
-           <div className="finish-score">You are {result}.</div>
-           <div className="finish-recommendation">Try to move forward with {suggestion}</div>
+            <div className="grid-item">
+              <div className="finish-title">{props.type}</div>
+              <div className="finish-score">You are {result}.</div>
+              <div className="finish-recommendation">Try to move forward with {suggestion}</div>
+           </div>
          </>);
 }
 
