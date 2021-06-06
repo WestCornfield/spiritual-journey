@@ -4,6 +4,7 @@ import { updateCarousel, updateShowModal } from "../actions/carouselActions";
 import { pageProperties } from "../properties/pageProperties";
 import QuestionList from "./QuestionList.component";
 import FinishPage from "./FinishPage.component";
+import EmailResults from "./EmailResults.component";
 import "./content-carousel-styles.css";
 
 const ContentCarousel = () => {
@@ -40,7 +41,7 @@ const ContentCarousel = () => {
     <QuestionList startIndex={24} endIndex={31} />,
     <QuestionList startIndex={32} endIndex={39} />,
     <QuestionList startIndex={40} endIndex={47} />,
-    <FinishPage />]
+    <div className="finishPage"><FinishPage /><EmailResults /></div>]
 
   const rightButtonText = () => {
     if (carousel == activeContent.length - 1) {

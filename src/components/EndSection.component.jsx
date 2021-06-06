@@ -1,7 +1,7 @@
 import React from "react";
-import { walkProperties } from "../properties/walkProperties"
-import { workProperties } from "../properties/workProperties"
-import { worshipProperties } from "../properties/worshipProperties"
+import { walkProperties } from "../properties/walkProperties";
+import { workProperties } from "../properties/workProperties";
+import { worshipProperties } from "../properties/worshipProperties";
 
 const EndSection = (props) => {
   var properties = (props.type == "Worship") ? worshipProperties : (props.type == "Walk") ? walkProperties : workProperties;
